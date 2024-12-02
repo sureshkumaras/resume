@@ -3,158 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Tomato with Counter</title>
+    <title>Suresh Kumar A S - Resume</title>
     <style>
         body {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(to bottom, #87CEEB, #228B22); /* Sky and ground background */
             font-family: Arial, sans-serif;
-            color: white;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-
-        #tomato-container {
-            display: flex;  /* Changed from default to flex */
-            justify-content: flex-start; /* Align the tomatoes horizontally to the left */
-            gap: 20px; /* Add some space between the tomatoes */
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        .tomato {
-            position: relative;
-            width: 150px;
-            height: 150px;
-            background: radial-gradient(circle at 50% 40%, #ff6347, #e0301e); /* Red gradient for depth */
-            border-radius: 50%;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 
-                        inset 0 -10px 15px rgba(0, 0, 0, 0.3); /* Inner and outer shadows */
-            margin: 20px;
+        h1, h2 {
+            text-align: center;
+            color: #007BFF;
         }
-
-        /* Tomato stem */
-        .stem {
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%) rotate(-10deg);
-            width: 60px;
-            height: 15px;
-            background: linear-gradient(to bottom, #228B22, #006400); /* Green stem gradient */
-            border-radius: 20px;
+        .contact, .section {
+            margin-bottom: 20px;
         }
-
-        /* Stem leaves */
-        .leaf {
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(to bottom, #32CD32, #006400); /* Green leaf gradient */
-            border-radius: 50%;
-            transform: translateX(-50%) rotate(45deg);
-            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .leaf:nth-child(2) {
-            transform: translateX(-50%) rotate(135deg); /* Rotate the second leaf */
-        }
-
-        .leaf:nth-child(3) {
-            transform: translateX(-50%) rotate(-45deg); /* Rotate the third leaf */
-        }
-
-        /* Counter section */
-        .counter {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .counter button {
-            background-color: #ff6347;
-            color: white;
-            border: none;
-            padding: 10px 15px;
+        .contact p, .section p {
             font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s ease;
+            line-height: 1.6;
         }
-
-        .counter button:hover {
-            background-color: #e0301e;
-        }
-
-        .counter span {
-            font-size: 24px;
+        .section-title {
             font-weight: bold;
-            color: #fff;
+            color: #007BFF;
+        }
+        .experience, .achievements, .education, .skills, .soft-skills, .personal-details {
+            margin-bottom: 20px;
+        }
+        .personal-details p {
+            margin: 5px 0;
+        }
+        .declaration {
+            font-style: italic;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
         }
     </style>
 </head>
 <body>
-    <div id="tomato-container">
-        <div class="tomato">
-            <div class="stem"></div>
-            <div class="leaf"></div>
-            <div class="leaf"></div>
-            <div class="leaf"></div>
-        </div>
+
+<div class="container">
+    <h1>Suresh Kumar A S</h1>
+    <div class="contact">
+        <p>Email: <a href="mailto:Sureshassuri1122@gmail.com">Sureshassuri1122@gmail.com</a> &nbsp;|&nbsp; Phone: +91 7022974814</p>
     </div>
 
-    <div class="counter">
-        <button onclick="decreaseCount()">-</button>
-        <span id="count">1</span>
-        <button onclick="increaseCount()">+</button>
+    <h2>Career Objective</h2>
+    <p>Seeking a challenging career with a leading corporate offering positions in Engineering, where my skills can be utilized effectively both for personal growth and organizational profitability.</p>
+<hr>
+    <h2>Summary</h2>
+    <p>
+        • Total experience of 2 Years in IT Industry with rich experience in Testing on basis for Client and Product. Involved in Validation testing and debugging the issues.
+    </p>
+    <p>
+        • I am actively seeking Java development projects that will allow me to leverage my skills, contribute to organizational growth, and advance my career.
+    </p>
+<hr>
+    <h2>Skills Summary</h2>
+    <p><strong>Programming Languages:</strong> Core Java, Spring Boot, Microservices, Docker (L1), Spring Cloud, Selenium.</p>
+    <p><strong>Tools:</strong> Benchmark Tools (3Dmark, Furmark), Sx, Security tools, Camera Tool, Burn tool, Maven.</p>
+<hr>
+    <h2>Experience Highlights</h2>
+    <div class="experience">
+        <p><strong>Organization:</strong> WIPRO, Bengaluru</p>
+        <p><strong>Designation:</strong> Project Engineer</p>
+        <p><strong>Duration:</strong> January 10th, 2022 – Till Date</p>
+        <p><strong>Roles & Responsibilities:</strong></p>
+        <ul>
+            <li>Experience in Post silicon platform validation for all core SoC series, Mobile, Laptop, Desktop systems.</li>
+            <li>Validated stress and stability testing, executing I/O_USB storage test cases.</li>
+            <li>Leadership as well as team handling and reporting to the client along with dashboard preparation.</li>
+            <li>Experience in board bring-up, hardware/software setup, firmware flashing, and reviewing test requirement documents.</li>
+            <li>Validated power management features like Connected Standby, Sleep, Shutdown, and Hibernate Intel Platforms.</li>
+            <li>Experience in executing I/O_USB test cases to test silicon compatibility across storage devices.</li>
+            <li>Validated storage device performance through manual testing, ensuring compatibility across devices.</li>
+            <li>Overall responsibilities include Validation testing & NIC Automation Testing (using TWS & TeamCity).</li>
+            <li>Experienced in setting up testing environments based on customer or reference validation platforms.</li>
+            <li>Triggered issues and promoted them as per client requirements.</li>
+        </ul>
     </div>
+<hr>
+    <h2>Organizational Achievements</h2>
+    <ul>
+        <li>Got Appreciation Certificate from Intel in S&S Domain validation & Debugging.</li>
+        <li>Received many appreciations for team handling.</li>
+    </ul>
+<hr>
+    <h2>Academic Details</h2>
+    <p><strong>B.Tech (ECE):</strong> PES Institute of Technology, Bangalore South Campus (2017-2021) – 7.23 CGPA</p>
+    <p><strong>STD XII:</strong> Pragathi PU College (March 2017) – 72.33%</p>
+    <p><strong>STD X:</strong> Jyothi Educational Trust (March 2015) – 60%</p>
 
-    <script>
-        let count = 1;
+    <h2>Certifications</h2>
+    <ul>
+        <li>Certified in Core JAVA.</li>
+    </ul>
+<hr>
+    <h2>Soft Skills</h2>
+    <ul>
+        <li>Good communication skills.</li>
+        <li>Demonstrated leadership skills in a team environment.</li>
+        <li>Willingness to learn new things and work well with others.</li>
+        <li>Like to shoulder multiple responsibilities.</li>
+        <li>Highly customer-oriented and result-oriented.</li>
+    </ul>
+<hr>
+    <h2>Personal Details</h2>
+    <div class="personal-details">
+        <p><strong>Date of Birth:</strong> 22-10-1999</p>
+        <p><strong>Sex:</strong> Male</p>
+        <p><strong>Marital Status:</strong> Single</p>
+        <p><strong>Address:</strong> Bhaktharahalli, Hoskote, Bangalore Rural, Karnataka - 560067</p>
+        <p><strong>Nationality:</strong> Indian</p>
+        <p><strong>Languages Known:</strong> English, Kannada, Telugu, and Hindi</p>
+    </div>
+<hr>
+    <h2>Declaration</h2>
+    <p class="declaration">I hereby declare that all the entries mentioned above are true to the best of my knowledge and bear the responsibility for the correctness of the same.</p>
 
-        function increaseCount() {
-            count++;
-            updateCount();
-            addTomato();
-        }
+    <p class="footer">Place: Bangalore | Suresh Kumar A S</p>
+</div>
 
-        function decreaseCount() {
-            if (count > 1) { // Prevent the count from going below 1
-                count--;
-                updateCount();
-                removeTomato();
-            }
-        }
-
-        function updateCount() {
-            document.getElementById('count').textContent = count;
-        }
-
-        function addTomato() {
-            const tomatoContainer = document.getElementById('tomato-container');
-            const newTomato = document.createElement('div');
-            newTomato.classList.add('tomato');
-            newTomato.innerHTML = ` 
-                <div class="stem"></div>
-                <div class="leaf"></div>
-                <div class="leaf"></div>
-                <div class="leaf"></div>
-            `;
-            tomatoContainer.appendChild(newTomato);
-        }
-
-        function removeTomato() {
-            const tomatoContainer = document.getElementById('tomato-container');
-            if (tomatoContainer.children.length > 0) {
-                tomatoContainer.removeChild(tomatoContainer.lastChild);
-            }
-        }
-    </script>
 </body>
 </html>
